@@ -1,0 +1,8 @@
+Date		Start	Stop	Activity	Comments
+18/09/18	18:30	20:00	prepare		read the requirement and information about git and according my understanding, make 10 own test
+19/09/18	18:00	20:00	coding		implement subset0
+20/09/18	19:45	20:30	coding		finish the subset0 but not do autotest
+22/09/18	18:00	21:00	coding		finish the subset1 but not do autotest
+23/09/18	13:00	15:00	debuging	do autotest for subset0 and change the error message and correct the code
+23/09/18	18:00	22:00	debuging	do autotest for subset1 change the error message and finish the rm and status
+1/09/18		12:00	14:50	debuging	do autest again, found there were some differents about rm error message and status, then fixed all problem
