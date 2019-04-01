@@ -1,0 +1,177 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+}
+
+.post {
+    max-width: 640px;
+    overflow: hidden;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-title {
+    padding: 20px 40px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-thumb {
+    margin: 0;
+    padding: 3px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid snow;
+}
+
+.post-image {
+    width: 640px;
+    height: 640px;
+}
+
+@media screen and (max-width: 500px) {
+    .post {
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,.0975);
+        border-top: 1px solid rgba(0,0,0,.0975); 
+        max-height: 60vh;
+    }
+
+    .post-image {
+        max-width: 100%;
+        max-height: 60vh;
+    }
+
+    #feed > * {
+        flex: 1 1 45%;
+        height: auto;
+    }
+}
+
+/* Add your styles here */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1 {background-color: #f44336;} /* Red */ 
+.button2 {background-color: #008CBA;} /* Blue */
+.popBox-mask{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .6;
+    z-index: 999;
+    background-color: #000;
+}
+.popBox-content{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+.test{
+    height: 100px;
+    width: 400px;
+}
+#popBox .popBox-content{
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    text-align: center;
+}
+#popBox .p{
+    line-height: 400px;
+    margin: 0;
+}
+#popBox .btn-close{
+    position: absolute;
+    background-color: #e7e7e7;
+    top: 3px;
+    right: 3px;
+}
+#popBox_update .popBox-content{
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    text-align: center;
+}
+#popBox_update .p{
+    line-height: 400px;
+    margin: 0;
+}
+#popBox_update .btn-close{
+    position: absolute;
+    background-color: #e7e7e7;
+    top: 3px;
+    right: 3px;
+}
+#popBox_update_1 .popBox-content{
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    text-align: center;
+}
+#popBox_update_1 .p{
+    line-height: 400px;
+    margin: 0;
+}
+#popBox_update_1 .btn-close{
+    position: absolute;
+    background-color: #e7e7e7;
+    top: 3px;
+    right: 3px;
+}
